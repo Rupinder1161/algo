@@ -38,9 +38,14 @@
 }
 .centerDiv{
    display: flex;
-  
+   /* width:80%; */
    flex-flow: row wrap;
    justify-content: center;
+  
    background-color: rgba(rgb(103, 84, 84), rgb(132, 165, 132), rgb(41, 41, 49), 0.8);
    margin: 30px;
+}
+
+.nameheader{
+  background-color: darkgrey;
 }

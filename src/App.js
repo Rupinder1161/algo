@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import SerachDataINObject from'./SerachDataINObject'
 import SpinalCaseTextConverson from './components/SpinalCaseTextConverson'
+import FileReader from './components/FileReader'
 import Chracterfiltering from './components/Chracterfiltering'
 import ExpansionPanel from '@material-ui/core/ExpansionPanel';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
@@ -60,6 +61,23 @@ function App() {
 
 
                                {/* three*/}
+
+                                 {/* filereader*/}
+                               <ExpansionPanel style={style}>
+                                                 <ExpansionPanelSummary
+                                                   expandIcon={<ExpandMoreIcon />}
+                                                   aria-controls="panel1a-content"
+                                                   id="panel1a-header"
+                                                   className="nameheader"
+                                                 >
+                                                   <Typography>Ping Text</Typography>
+                                                 </ExpansionPanelSummary>
+                                                 <ExpansionPanelDetails>
+                                                                  <FileReader/>
+                                                 </ExpansionPanelDetails>
+                                               </ExpansionPanel>
+
+                                               {/* filereader*/}
       </div>
                                    
      
