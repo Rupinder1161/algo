@@ -5,6 +5,7 @@ import SerachDataINObject from'./SerachDataINObject'
 import SpinalCaseTextConverson from './components/SpinalCaseTextConverson'
 import FileReader from './components/FileReader'
 import Chracterfiltering from './components/Chracterfiltering'
+import DistanceCaluclation from './components/DistanceCaluclation'
 import ExpansionPanel from '@material-ui/core/ExpansionPanel';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
@@ -52,7 +53,7 @@ function App() {
                                                    aria-controls="panel1a-content"
                                                    id="panel1a-header"
                                                  >
-                                                   <Typography> Chracter filtering</Typography>
+                                                   <Typography> Search and  Replace</Typography>
                                                  </ExpansionPanelSummary>
                                                  <ExpansionPanelDetails>
                                                                   <Chracterfiltering/>
@@ -78,6 +79,24 @@ function App() {
                                                </ExpansionPanel>
 
                                                {/* filereader*/}
+                                               {/* distnace calculater*/}
+                                               <ExpansionPanel style={style}>
+                                                 <ExpansionPanelSummary
+                                                   expandIcon={<ExpandMoreIcon />}
+                                                   aria-controls="panel1a-content"
+                                                   id="panel1a-header"
+                                                   className="nameheader"
+                                                 >
+                                                   <Typography>Distance calculatation</Typography>
+                                                 </ExpansionPanelSummary>
+                                                 <ExpansionPanelDetails>
+                                                                  <DistanceCaluclation/>
+                                                 </ExpansionPanelDetails>
+                                               </ExpansionPanel>
+
+
+                                               {/* distnace calculater*/}
+
       </div>
                                    
      
