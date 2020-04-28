@@ -5,8 +5,11 @@ import SerachDataINObject from'./SerachDataINObject'
 import SpinalCaseTextConverson from './components/SpinalCaseTextConverson'
 import FileReader from './components/FileReader'
 import Chracterfiltering from './components/Chracterfiltering'
+ import MyChart from './components/FindPrimeNumber'
+ import Resume from './components/Resume'
 import DistanceCaluclation from './components/DistanceCaluclation'
 import ExpansionPanel from '@material-ui/core/ExpansionPanel';
+
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import Typography from '@material-ui/core/Typography';
@@ -96,10 +99,44 @@ function App() {
 
 
                                                {/* distnace calculater*/}
+                                               {/* prime number*/}
+                                               <ExpansionPanel style={style}>
+                                                 <ExpansionPanelSummary
+                                                   expandIcon={<ExpandMoreIcon />}
+                                                   aria-controls="panel1a-content"
+                                                   id="panel1a-header"
+                                                   className="nameheader"
+                                                 >
+                                                   <Typography>Find Prime Number</Typography>
+                                                 </ExpansionPanelSummary>
+                                                 <ExpansionPanelDetails>
+                                                         <MyChart/>                  
+                                                 </ExpansionPanelDetails>
+                                               </ExpansionPanel>
+
+
+                                               {/* prime number*/}
+                                                                  {/* prime number*/}
+                                                                  <ExpansionPanel style={style}>
+                                                 <ExpansionPanelSummary
+                                                   expandIcon={<ExpandMoreIcon />}
+                                                   aria-controls="panel1a-content"
+                                                   id="panel1a-header"
+                                                   className="nameheader"
+                                                 >
+                                                   <Typography>NewChart</Typography>
+                                                 </ExpansionPanelSummary>
+                                                 <ExpansionPanelDetails>
+                                                                          
+                                                 </ExpansionPanelDetails>
+                                               </ExpansionPanel>
+
+                                               <Resume/> 
+                                               {/* prime number*/}
 
       </div>
                                    
-     
+      
     
     </div>
   );
